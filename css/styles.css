@@ -623,3 +623,50 @@ content: "";
         color: #9DA4BD;
         margin-top: 20px;
 }
+.uptitle {
+        display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 40px;
+            order: 2;
+            text-decoration: none;
+}
+
+.uptitle:first-child::before {
+    content: "";
+        display: inline-block;
+        height: 1px;
+        width: 60px;
+        vertical-align: middle;
+        background: #303030;
+}
+.footer-link {
+    text-decoration: none;
+}
+.support {
+    font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        letter-spacing: 0.2em;
+        margin-top: 21px;
+        color: #9DA4BD;
+}
+
+.button-menu {
+    max-width: 40px;
+    max-height: 40px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 51;
+}
+
+  
