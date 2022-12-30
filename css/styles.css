@@ -49,7 +49,7 @@ body {
     content: "";
     display: inline-block;
     width: 60px;
-    height: 1px;
+    height: 2px;
     background-color: rgba(157, 164, 189, 0.6);
     }
 .title {
@@ -99,7 +99,7 @@ body {
         display: inline-block;
         width: 60px;
         height: 1px;
-        background-color: #303030;;
+        background-color: #303030;
 }
 
 .hero-title {
@@ -170,3 +170,175 @@ body {
             left: 50%;
             transform: translate(-50%, 0); */
 }
+
+.section.price {
+    background-image: url(../images/phonesectionmobile.jpg);
+    background-repeat: no-repeat;
+}
+
+.uptitle-contrast {
+    font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+    
+        text-transform: uppercase;
+        display: flex;
+            align-items: center;
+        color: rgba(157, 164, 189, 0.6);
+            gap: 20px;
+}
+
+.uptitle-contrast::before {
+    content: "";
+        display: inline-block;
+        width: 60px;
+        height: 2px;
+        background-color: rgba(157, 164, 189, 0.6) ;
+}
+
+.price-title {
+    font-family: 'Raleway';
+        font-size: 40px;
+        line-height: 47px; 
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+}
+
+.price-list {
+    color: var(--color-text-contrast);
+        list-style: none;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 44px;
+}
+
+.list {
+    list-style: none;
+}
+
+.text {
+    display: flex;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        align-items: center;
+        letter-spacing: 0.02em;
+    
+        color: #9DA4BD;
+}
+
+.text-part::before {
+    content: "";
+        display: inline-block;
+        width: 104px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.6);
+
+}
+
+.btn.contact-button__link:hover,
+.btn.contact-button__link:focus {
+    background-image: url(../images/phonesectionmobile.jpg);
+    color: #FFFFFF;
+}
+
+.previlegious {
+    background-color: #FFFFFF;
+    color: #303030;
+}
+
+.previleqious-prg {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #303030;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+}
+
+.previleqious-prg::before {
+    content: "";
+        display: inline-block;
+        width: 60px;
+        height: 2px;
+        background-color: #303030;
+}
+
+.previleqious-title {
+    font-weight: 700;
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+        color: #303030;
+}
+
+.previleqious-text {
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 167% */
+    
+        letter-spacing: 0.02em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #555555;
+}
+
+.numbers {
+ position: relative;
+display: block;
+font-weight: 700;
+ font-size: 42px;
+ line-height: 57px;
+ text-align: center;
+ letter-spacing: .05em;
+}
+
+.why-downtext {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            text-align: center;
+            margin: 0 auto;
+            color: var(--secondary-text-color);
+}
+
+.plus {
+    font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+    
+        text-align: center;
+    
+        color: #FF6C00;
+}
+
+.why-list {
+    display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-top: 44px;
+}
+
+.item {
+ width: calc(50% - 15px);
+ padding: 20px;
+min-height: 133px;
+background-color: #f7f7f7;        
+}
+
+    .item:not(:nth-child(2n)) {
+     margin-right: 30px;
+     margin-top: 30px;
+ }
