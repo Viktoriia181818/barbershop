@@ -12,12 +12,39 @@
 </head>
 <body>
     <header class="page-header">
-        <button type="button" class="button-menu is-open" data-menu-button>
-            <svg aria-label="Переключатель мобильного меню">
-                <use class="menu" href="./images/sprite.svg#icon-menu_24px" width="24"></use>
-                <use class="cross" href="./images/sprite.svg#icon-menu_close" width="24"></use>
-            </svg>
-        </button>
+        <div class="header---block">
+            <button type="button" class="button-menu is-open" data-menu-button>
+                <svg aria-label="Переключатель мобильного меню">
+                    <use class="menu" href="./images/sprite.svg#icon-menu_24px" width="24"></use>
+                    <use class="cross" href="./images/sprite.svg#icon-menu_close" width="30"></use>
+                </svg>
+            </button>
+            <div class="live-menu" data-menu>
+                <ul class="mobile-menu list">
+                    <li class="mobile-menu__link"><a class="mobile-menu__item current" href="./index.html">About</a></li>
+                    <li class="mobile-menu__link"><a class="mobile-menu__item" href="#">Services and prices</a></li>
+                    <li class="mobile-menu__link"><a class="mobile-menu__item" href="#">Barbers</a></li>
+                    <li class="mobile-menu__link"><a class="mobile-menu__item" href="#">Contacts</a></li>
+                </ul>
+            
+                <div class="contact-live">
+                    <ul class="contact-live__mobile">
+                        <li class="contact-live-mobile__item list"><a class="contact-menu__tel list" href="tel:+380961111111">
+                                +38 044 111 11 11</a></li>
+                    </ul>
+                    <div class="contact-button-mobile">
+                        <button type="button" class="contact-button__link-mobile">
+                            Online-booking
+                        </button>
+                    </div>
+                    <ul class="mobile-socials list">
+                        <li class="contact-social"><a class="contact-social__item instagram " href="#">Instagram</a></li>
+                        <li class="contact-social"><a class="contact-social__item youtube" href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
         <div class=" section header-block">
             <p class="logo-information">A hair salon for men in Kyiv</p>
             <h1 class="title">BarberShop</h1>
@@ -44,99 +71,105 @@
                 <button type="button" class="contact-button__link">
                     Online-booking
                 </button>
+                </div>
+    </section>
+    <section class="services__section" id="services-prices">
+    <div class="container prices-link">
+        <p class="uptitle-contrast">Spend your time with the best masters</p>
+        <h2 class="price-title">Services and prices</h2>
+    
+        <ul class="prices-list list">
+            <li class="item-first">
+                <ul class="prices-list-first list">
+                    <li class="services__item">
+                        <span class="service">Men’s haircut</span>
+                        <div class="service__line"></div>
+                        <span class="price">300 uah</span>
+                    </li>
+                    <li class="services__item">
+                        <span class="service">Beard trim</span>
+                        <div class="service__line"></div>
+                        <span class="price">300 uah</span>
+                    </li>
+                    <li class="services__item">
+                        <span class="service">Mustache trim</span>
+                        <div class="service__line"></div>
+                        <span class="price">200 uah.</span>
+                    </li>
+                    <li class="services__item">
+                        <span class="service">Straight razor shave</span>
+                        <div class="service__line"></div>
+                        <span class="price">from 200 uah.</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="services__item--second">
+                <ul class="services__list--second">
+                    <li class="services__item">
+                        <span class="service">Trainee’s haircut</span>
+    
+                        <div class="service__line"></div>
+                        <span class="price">50 uah.</span>
+                    </li>
+                    <li class="services__item">
+                        <span class="service">Haircut under the nozzle</span>
+                        <div class="service__line"></div>
+                        <span class="price">200 uah.</span>
+                    </li>
+                    <li class="services__item">
+                        <span class="service">Children’s haircut (0-12 y.o.)</span>
+                        <div class="service__line"></div>
+                        <span class="price">300 uah.</span>
+                    </li>
+                    <li class="services__item">
+                        <span class="service">Camouflage of gray hair</span>
+                        <div class="service__line"></div>
+                        <span class="price">200 uah.</span>
+                    </li>
+                </ul>
+                
+            </li>
+        </ul>
+        <button type="button" class="contact-button__link-mobile inprice">
+            Online-booking
+        </button>
+        </div>
+        
     </section>
 
-   
-
-    <section class="section price">
-            <p class="uptitle-contrast">Spend your time with the best masters</p>
-            <h2 class="price-title">Services and prices</h2>
-            <ul class="price-list list">
-                <li>
-                    <ul class="list price">
-                        <li class="item">
-                            <p class="text">
-                                Men’s haircut <span class="text-part">300 uah.</span>
-                            </p>
-                        </li>
-                        <li class="item">
-                            <p class="text">
-                                Beard trim <span class="text-part">300 uah.</span>
-                            </p>
-                        </li>
-                        <li class="item">
-                            <p class="text">
-                                Mustache trim <span class="text-part">200 uah.</span>
-                            </p>
-                        </li>
-                        <li class="item">
-                            <p class="text">
-                                Straight razor shave
-                                <span class="text-part">from 200 uah.</span>
-                            </p>
-                        </li>
-                    </ul>
+    <section class="section-advantages">
+        <div class="section-advantages__container section">
+            <div class="section-advantages__wrapper">
+                <p class="section-advantages__highlight">Old traditional school</p>
+                <h2 class="section-advantages__heading">
+                    ¿Why people come to us?
+                </h2>
+                <p class="section-advantages__description">
+                Only good things are said about us. But it's better to see and
+                feel 1 time than read 10 times.
+                </p>
+            </div>
+            <ul class="advantages-list">
+                <li class="advantages-list__item">
+                    <b class="advantages-list__figure">600 <span class="advantages-list__sup">+</span></b>
+                    <p class="advantages-list__description">Satisfied customers per day</p>
                 </li>
-                <li>
-                    <ul class="list price">
-                        <li class="item">
-                            <p class="text">
-                                Trainee’s haircut <span class="text-part">50 uah.</span>
-                            </p>
-                        </li>
-                        <li class="item">
-                            <p class="text">
-                                Haircut under the nozzle
-                                <span class="text-part">200 uah.</span>
-                            </p>
-                        </li>
-                        <li class="item">
-                            <p class="text">
-                                Children’s haircut (0-12 y.o.)
-                                <span class="text-part">300 uah.</span>
-                            </p>
-                        </li>
-                        <li class="item">
-                            <p class="text">
-                                Camouflage of gray hair
-                                <span class="text-part">200 uah.</span>
-                            </p>
-                        </li>
-                    </ul>
+                <li class="advantages-list__item">
+                    <b class="advantages-list__figure">50<span class="advantages-list__sup">+</span></b>
+                    <p class="advantages-list__description">Awards for excellent service</p>
+                </li>
+                <li class="advantages-list__item">
+                    <b class="advantages-list__figure">20<span class="advantages-list__sup">+</span></b>
+                    <p class="advantages-list__description">Kyiv’s best barbers</p>
+                </li>
+                <li class="advantages-list__item">
+                    <b class="advantages-list__figure">100<span class="advantages-list__sup">+</span></b>
+                    <p class="advantages-list__description">Gifts for regular customers</p>
                 </li>
             </ul>
-            <div class="contact-button">
-                <button type="button" class=" btn contact-button__link">
-                    Online-booking
-                </button>
         </div>
     </section>
 
-    <section class="section previlegious">
-        <p class="previleqious-prg">Old traditional school</p>
-        <h2 class="previleqious-title">¿Why people come to us?</h2>
-        <p class="previleqious-text">Only good things are said about us. But it's better to see and 
-            feel 1 time than read 10 times.</p>
-            <ul class="list why-list">
-                <li class="item">
-                    <p class="numbers">600<sup class="plus">+</sup></p>
-                    <p class="why-downtext">Satisfied customers per day</p>
-                </li>
-                <li class="item">
-                    <p class="numbers">50<sup class="plus">+</sup></p>
-                    <p class="why-downtext">Awards for excellent service</p>
-                </li>
-            
-                <li class="item">
-                    <p class="numbers">20<sup class="plus">+</sup></p>
-                    <p class="why-downtext">Kyiv’s best barbers</p>
-                </li>
-                <li class="item">
-                    <p class="numbers">100<sup class="plus">+</sup></p>
-                    <p class="why-downtext">Gifts for regular customers</p>
-                </li>
-            </ul>
-    </section>
 
     <section class="section barbers">
         <p class="barber-text">For true enjoyers of the atmosphere</p>
@@ -323,7 +356,7 @@
     </section>
     </main>
     
-    <footer class="section footer">
+    <footer class="socials-footer">
         <div class="container">
             <ul class="list uptitle">
                 <li>
@@ -334,11 +367,13 @@
                 </li>
             </ul>
             </div>
+    
             <div class="support-footer">
             <p class="support">&copy; Copyright 2020</p>
             
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
     </body>
     
     </html>
