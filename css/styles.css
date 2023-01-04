@@ -20,12 +20,26 @@ body {
     padding-right: 31px;
 }
 
-.page-header {
-    background-image: url(../images/logo-header-mobile.jpg);
-    height: 580px;
-    width: 480px;
-    background-repeat: no-repeat;
+@media screen and (max-width:767.9px) {
+    .page-header {
+            background-image: url(../images/logo-header-mobile.jpg);
+            height: 580px;
+            width: 480px;
+            background-repeat: no-repeat;
+        }
 }
+
+
+
+
+@media screen and (min-width:768px) {
+    .page-header {
+        background-image: url(../images/headerbg.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
+
 
 .logo-information {
     font-family: 'Open Sans';
@@ -52,6 +66,14 @@ body {
     height: 2px;
     background-color: rgba(157, 164, 189, 0.6);
     }
+
+@media screen and (min-width:768px) {
+    .logo-information {
+        display: flex;
+        justify-content: center;
+    }
+}
+    
 .title {
     width: 306px;   
         font-family: 'Raleway';
@@ -688,21 +710,26 @@ content: "";
     margin-bottom: 44px;
 }
 
-.button-menu {
-        max-width: 40px;
-        max-height: 40px;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        position: relative;
-        z-index: 51;
-
+    .button-menu {
+            max-width: 40px;
+            max-height: 40px;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            z-index: 51;
+    
     }
+
+/* .button-menu {
+    display: none;
+} */
+
   /* .button-menu.is-open {
     display: none;
   } */
@@ -1053,3 +1080,38 @@ content: "";
         display: flex;
             justify-content: center;
 } */
+
+.live-menu {
+    display: none;
+}
+.live-menu.is-open {
+    display: block;
+}
+
+
+@media screen and (min-width:768px){
+    .button-menu {
+        display: none;
+    }
+}
+
+.tabldesc-menu {
+        display: flex;
+            gap: 16px;
+            padding-top: 15px;
+            padding-right: 105px;
+}
+@media screen and (max-width:767.9px) {
+    .tabldesc-menu {
+        display: none;
+    }
+}
+ 
+.tabldesc-menu__item {
+    font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        color: #FFFFFF;
+}
