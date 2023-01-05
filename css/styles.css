@@ -114,6 +114,14 @@ body {
     color: black;
 }
 
+@media screen and (min-width:768px) {
+    .hero {
+        display: flex;
+            padding: 100px 39px;
+            gap: 30px;
+    }
+}
+
 .hero-prg {
     font-weight: 600;
         font-size: 11px;
@@ -126,7 +134,24 @@ body {
         color: #303030;
         gap: 20px;
         margin-bottom: 20px;
+        
 }
+
+@media screen and (min-width:768px) {
+    .primary-prg {
+        margin-bottom: 77px;
+    }
+
+}
+
+@media screen and (max-width:767.9px) {
+    .primary-prg {
+        margin-bottom: 40px;
+    }
+
+}
+
+
 
 .hero-prg::before {
     content: "";
@@ -168,7 +193,6 @@ body {
     
         color: #555555;
         font-family: 'Open Sans';
-        margin-bottom: 40px;
 }
 
 .contact-button__link {
@@ -207,11 +231,40 @@ body {
     background-image: url(../images/bgsectionmobile.jpg);
         margin-left: auto;
             margin-right: auto;
-            max-width: 480px;
+            max-width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50%;
             background-color: #111319;
+            max-width: 480px;
+                /* height: 826px; */
+                max-width: 100%;
+                background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+.prices-link {
+        max-width: 720px;
+        height: 100%;
+        padding: 100px 15px;
+}
+}
+
+@media screen and (max-width:767.9px) {
+    .prices-link {
+            margin-left: auto;
+                margin-right: auto;
+                max-width: 448px;
+                height: 100%;
+                padding: 84px 15px;
+                text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .services__section {
+        background-image: url(../images/bgpricetablet.jpg);
+    }
 }
 
 .uptitle-contrast {
@@ -577,6 +630,10 @@ content: "";
      line-height: 19px;
      border: none;
      cursor: pointer;
+ }
+
+ .btn-footer.hero-btn {
+    color: #030303;
  }
 
  .btn-footer {
@@ -981,6 +1038,13 @@ content: "";
         padding: 30px;
     }
 
+    @media screen and (min-width:768px) {
+        .prices-list {
+            max-width: 690px;
+                padding: 30px 40px;
+        }
+    }
+
         .prices-list-first {
             display: flex;
                 flex-direction: column;
@@ -1046,6 +1110,16 @@ content: "";
         background-color: #303030;
 }
 
+.section-advantages__heading {
+    margin-left:40px;
+    font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+    
+        color: #303030;
+}
 .section-advantages__description {
     font-weight: 400;
         font-size: 18px;
@@ -1059,6 +1133,11 @@ content: "";
         margin-bottom: 44px;
 }
 
+@media screen and (min-width:768px) {
+    .section-advantages__description {
+        margin-left: 40px;
+    }
+}
 .advantages-list {
         display: flex;
             flex-wrap: wrap;
@@ -1169,3 +1248,22 @@ content: "";
 .tabldesc-menu__item:focus {
     color: #ff6c00;
 }
+
+.img-for-tablet {
+        display: flex;
+            flex-direction: column;
+            gap: 30px;
+}
+
+@media screen and (max-width: 767.9px) {
+    .img-for-tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+        .advantages-list {
+                margin-left: auto;
+                width: 480px;
+            }
+} 
