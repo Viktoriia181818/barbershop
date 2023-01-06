@@ -205,6 +205,9 @@ body {
     line-height: 19px;
     border: none;
     cursor: pointer;
+    position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
 }
 
 .contact-button__link {
@@ -573,10 +576,15 @@ content: "";
     font-weight: 700;
         font-size: 42px;
         line-height: 49px;
-        text-align: center;
         letter-spacing: 0.05em;
         color: #FFFFFF;
         margin-bottom: 44px;
+ }
+
+ @media screen and (max-width:767.9px) {
+    .online-booking-title {
+     text-align: center;
+    }
  }
 
  .form-input {
@@ -654,10 +662,14 @@ content: "";
     border: 1px solid rgba(255, 108, 0, 1);
     background-clip: padding-box;
     padding: 1.5px;
-    position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
+}
 
+@media screen and (max-width:767.9px) {
+    .contact-button-footer {
+        position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+    }
 }
 
 .contact-button-desctablmenu {
@@ -688,8 +700,16 @@ content: "";
 
 .section-contact {
     background-image: url(../images/bgfootermobile.jpg);
+        background-size: cover;
+        background-position: center;
 }
-
+@media screen and (min-width:768px) {
+    .section-contact {
+        background-image: url(../images/contacttablet.jpg);
+            background-position: center;
+            background-size: cover;
+    }
+}
 .title-contacts-footer {
     font-family: 'Raleway';
         font-style: normal;
@@ -700,6 +720,12 @@ content: "";
         letter-spacing: 0.05em;
         margin-bottom: 40px;
         color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) {
+    .title-contacts-footer {
+        text-align: start;
+    }
 }
 
 .map-addres {
@@ -1080,11 +1106,11 @@ content: "";
     margin: 0 6px;
 }
 
-.contact-button__link-mobile.inprice {
+/* .contact-button__link-mobile.inprice {
     position: relative;
         left: 50%;
         transform: translate(-50%, 0);
-}
+} */
 
 
 
@@ -1267,3 +1293,43 @@ content: "";
                 width: 480px;
             }
 } 
+
+/* @media screen and (max-width:767.9px) {
+    .form-label-of-text {
+            max-width: 480px;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .form-label-of-text {
+        margin-left: auto;
+            margin-right: auto;
+    }
+} */
+
+/* /* @media screen and (max-width:767.9px) {
+    .online-booking {
+            margin-left: auto;
+                margin-right: auto;
+                max-width: 480px
+    } */
+
+    @media screen and (min-width:768px) {
+        .form-label-of-text {
+                gap: 30px;
+                    display: flex;
+                    justify-content: center;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .form-label {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .contact-button-footer.contact-foot-tabl {
+            position: relative;
+        }
+    }
