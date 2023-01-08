@@ -593,6 +593,14 @@ content: "";
     margin-top: 30px;
  }
 
+ @media screen and (min-width:1280px) {
+        .services__list--second {
+                transform: translate(308px, -126px);
+                    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+                    padding: 15px;
+            }
+ }
+ 
  .online-booking {
     background-color: #191C26;
  }
@@ -1083,13 +1091,18 @@ content: "";
     height: 1px;
 }
 
+@media screen and (max-width:1279.9px) {
+    .prices-list {
+        background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+}
 .prices-list {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
 
     padding: 15px;
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  
     text-align: left;
         max-width: 418px;
 
@@ -1110,6 +1123,12 @@ content: "";
                 padding: 15px;
                 background: linear-gradient(180deg, #171a24, rgba(23, 26, 36, .2));
                 text-align: left;
+            }
+
+            @media screen and (min-width:1280px) {
+                .prices-list-first {
+                    transform: translate(-325px, 136px);
+                }
             }
 
 .services__item {
@@ -1325,6 +1344,20 @@ content: "";
 @media screen and (max-width: 767.9px) {
     .img-for-tablet {
         display: none;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .img-for-tablet {
+        display: flex;
+        flex-direction: inherit;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .url-img {
+        width: 270px;
+            height: 445px;
     }
 }
 
