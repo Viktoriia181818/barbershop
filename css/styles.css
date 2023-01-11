@@ -1408,6 +1408,15 @@ content: "";
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width:1200px) {
+    .team-primary__team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 .team-socials__social--networks {
     fill: currentColor;
 }
@@ -1589,6 +1598,13 @@ font-weight: 400;
         }
     }
 
+        @media screen and (min-width:900px) {
+            .barbers-work {
+                margin-left: 30px;
+                flex-basis: calc(25% - 30px);
+            }
+        }
+
     @media screen and (min-width:768px) {
         .workbarb-img {
             display: block;
@@ -1712,6 +1728,30 @@ font-weight: 400;
     .section-advantages__container {
         display: flex;
             flex-direction: row-reverse;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+    .container-footch {
+                width: 100%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 1200px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        .contact-of {
+            transform: translate(-313px, 216px);
+        }
+    }
+  
+    @media screen and (min-width:1200px) {
+        .uptitle-contrast {
+                margin-right: 53px;
         }
     }
    
